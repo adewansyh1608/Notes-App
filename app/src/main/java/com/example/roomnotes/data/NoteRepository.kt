@@ -1,6 +1,6 @@
 package com.example.roomnotes.data
 
-import com.example.roomnotes.NoteDao
+import com.example.roomnotes.data.NoteDao
 import kotlinx.coroutines.flow.Flow
 class NoteRepository(private val dao: NoteDao) {
     fun getAllNotes(): Flow<List<Note>> = dao.getAllNotes()
